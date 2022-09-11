@@ -23,9 +23,10 @@ while temp <= num:
 if number>0:
     print(list)
 elif number < 0:
+    list.insert(0, 1)
     temp_list = []
     size = len(list)
-    i = 1
+    i = 3
     while i < size:
         temp_list.append(list[i] * -1)
         i+=1
