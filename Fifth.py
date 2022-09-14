@@ -20,13 +20,12 @@ while temp <= num:
     list.append(fibonacci(temp))
     temp +=1
 
-list.insert(0, 1)
 temp_list = []
-size = len(list)
-i = 3
-while i < size:
-    temp_list.append(list[i] * -1)
-    i+=1
+for i in range(0, len(list)):
+    temp_list.append(list[i])
+temp_list.pop(0)
+for i in range(1, len(list)-1, 2):
+  temp_list[i] *= -1
 k=0
 size = len(list) + len(temp_list)
 while len(list) < size:
