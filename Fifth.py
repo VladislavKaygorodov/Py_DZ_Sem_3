@@ -20,19 +20,16 @@ while temp <= num:
     list.append(fibonacci(temp))
     temp +=1
 
-if number>0:
-    print(list)
-elif number < 0:
-    list.insert(0, 1)
-    temp_list = []
-    size = len(list)
-    i = 3
-    while i < size:
-        temp_list.append(list[i] * -1)
-        i+=1
-    k=0
-    size = len(list) + len(temp_list)
-    while len(list) < size:
-        list.insert(0, temp_list[k])
-        k+=1
-    print(list)
+list.insert(0, 1)
+temp_list = []
+size = len(list)
+i = 3
+while i < size:
+    temp_list.append(list[i] * -1)
+    i+=1
+k=0
+size = len(list) + len(temp_list)
+while len(list) < size:
+    list.insert(0, temp_list[k])
+    k+=1
+print(list)
